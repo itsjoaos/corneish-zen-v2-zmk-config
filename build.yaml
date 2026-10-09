@@ -1,0 +1,6 @@
+# The GitHub Actions build matrix: one firmware file per half.
+# These are the ZMK v0.3 board names for the V2 PCB (see config/west.yml).
+---
+include:
+  - board: corneish_zen_v2_left
+  - board: corneish_zen_v2_right

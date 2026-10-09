@@ -1,0 +1,12 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3
+      # revision: main # To use the latest (frequently breaking) changes. Must also edit the .github/workflows/build.yml to match
+      import: app/west.yml
+  self:
+    path: config
